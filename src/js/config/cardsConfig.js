@@ -1,7 +1,7 @@
 export const cardsConfig = new Map ([ 
-  ["Main", [
-    { word: 'setA', img: './img/cry.jpg'},
-    { word: 'setB', img: './img/dance.jpg'},
+  ["main", [
+    { word: 'actionA', img: './img/cry.jpg'},
+    { word: 'actionB', img: './img/dance.jpg'},
     { word: 'animalA', img: './img/cat.jpg'},
     { word: 'animalB', img: './img/bird.jpg'},
     { word: 'clothes', img: './img/pants.jpg'},
@@ -9,7 +9,7 @@ export const cardsConfig = new Map ([
     { word: 'business', img: './img/business.jpg'},
     { word: 'web', img: './img/optimization.png'},
   ]],
-  ["setA", [
+  ["actionA", [
     { word: 'cry', translation: 'плакать', img: './img/cry.jpg', audioSrc: './audio/cry.mp3' },
     { word: 'dance', translation: 'танцевать', img: './img/dance.jpg', audioSrc: './audio/dance.mp3' },
     { word: 'dive', translation: 'нырять', img: './img/dive.jpg', audioSrc: './audio/dive.mp3' },
@@ -19,7 +19,7 @@ export const cardsConfig = new Map ([
     { word: 'hug', translation: 'обнимать', img: './img/hug.jpg', audioSrc: './audio/hug.mp3' },
     { word: 'jump', translation: 'прыгать', img: './img/jump.jpg', audioSrc: './audio/jump.mp3' },
   ]],
-  ["setB", [
+  ["actionB", [
     { word: 'open', translation: 'открывать', img: './img/open.jpg', audioSrc: './audio/open.mp3' },
     { word: 'play', translation: 'играть', img: './img/play.jpg', audioSrc: './audio/play.mp3' },
     { word: 'point', translation: 'указывать', img: './img/point.jpg', audioSrc: './audio/point.mp3' },

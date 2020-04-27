@@ -1,12 +1,21 @@
-import { generateDom } from './generateDom'
+import { linkNames } from './config/linkNames';
+import { GenerateDom } from './GenerateDom'
 import { CardsContainer } from './CardsContainer';
 import { cardsConfig } from './config/cardsConfig';
 import { MainContainer } from './MainContainer';
 import '../css/style.css';
 
-generateDom();
 
-const cardsContainer = new MainContainer(cardsConfig.get("Main"));
+const app1 = new GenerateDom(linkNames.get('Links'));
+
+document.body.append(app1.app);
+
+let audio =document.createElement('audio');
+audio.src= 'src/assets/audio/error.mp3';
+
+document.body.append(audio);
+
+const cardsContainer = new MainContainer(cardsConfig.get("main"));
 
 container.append(cardsContainer.container);
 
@@ -35,7 +44,7 @@ document.addEventListener('mousemove', () => {
 });
 
 document.addEventListener('click', (event) => {
-  if ((event.target.matches('a') || event.target.className.slice(0,4)=='main') && event.target.id!='Main') {
+  if ((event.target.matches('a') || event.target.className.slice(0,4)=='main') && event.target.id!='main') {
     let newCardsContainer = new CardsContainer(cardsConfig.get(event.target.id));
     cardWrapper.replaceWith(newCardsContainer.container);
   } else {
